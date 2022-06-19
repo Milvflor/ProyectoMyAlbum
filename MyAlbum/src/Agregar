@@ -1,4 +1,4 @@
-
+==================
 Crear una clase Personas
     Nombre
     Apellido
@@ -21,6 +21,8 @@ Clase Photos
     ArrayList<Persona>
     String Description
     String PATH -> manipular posicion de la foto.
+===================
+
 
 //Tener una carpeta Recursos_Default va a tener una foto inicial
 //Por cada Album crear una carpeta en Recursos_Default
