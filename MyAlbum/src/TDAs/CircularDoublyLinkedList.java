@@ -104,5 +104,9 @@ public class CircularDoublyLinkedList<E> {
         }
         return e;
     }
+    
+    //Iteradores
+    //Comparadores: Búsquedas por fecha, lugar, fecha & lugar
+    //agregar metodo de remove que retorne NODO ->no elemento
 
 }

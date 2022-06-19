@@ -1,0 +1,34 @@
+
+Crear una clase Personas
+    Nombre
+    Apellido
+
+Clase MisAlbumes
+    ArrayList<Album> (Reservar la posicion de ingreso/ Ordenar por orden Alfabetico)
+
+Clase Album
+    String Description
+    DoublyLinkedList <Photos>
+    String Nombre_Album
+
+Clase Persona
+    String Nombre
+    String Apellido
+
+Clase Photos
+    Date fecha
+    String Lugar (Direccion//Pais)
+    ArrayList<Persona>
+    String Description
+    String PATH -> manipular posicion de la foto.
+
+//Tener una carpeta Recursos_Default va a tener una foto inicial
+//Por cada Album crear una carpeta en Recursos_Default
+//Crear icono MOVER -> mover foto entre albumes.
+    DropDown con Albumes existentes
+//Fotos de Album 
+    Copio la foto al album "nuevo"
+    Elimina de la carpeta del Album Anterior
+        
+    
+    
