@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorFX" prefHeight="309.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myalbum.CargaImagenFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="23.0" prefHeight="23.0" prefWidth="203.0" text="Chooser the dictory of image: ">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputPATH" layoutX="25.0" layoutY="53.0" prefHeight="27.0" prefWidth="328.0" />
+      <Button fx:id="browserB" layoutX="360.0" layoutY="53.0" mnemonicParsing="false" onAction="#browserImg" prefHeight="27.0" prefWidth="82.0" text="Browser" />
+      <GridPane layoutX="25.0" layoutY="113.0" prefHeight="155.0" prefWidth="407.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="53.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="354.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="43.0" text="Date: " />
+            <Label prefHeight="17.0" prefWidth="43.0" text="Place: " GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="43.0" text="People: " GridPane.rowIndex="2" />
+            <Label text="Details:" GridPane.rowIndex="3" />
+            <Label GridPane.columnIndex="1" />
+            <TextField fx:id="dateLabel" style="-fx-background-color: #6662;" GridPane.columnIndex="1" />
+            <TextField fx:id="placeLabel" style="-fx-background-color: #6662;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="peopleLabel" style="-fx-background-color: #6662;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="detailsLabel" style="-fx-background-color: #6662;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="167.0" layoutY="96.0" text="Add Photo Information" />
+      <Button fx:id="uploadB" disable="true" layoutX="194.0" layoutY="268.0" mnemonicParsing="false" onAction="#uploadImg" prefHeight="27.0" prefWidth="69.0" text="Upload" />
+   </children>
+</AnchorPane>
