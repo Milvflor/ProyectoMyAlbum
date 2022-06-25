@@ -21,6 +21,30 @@ class Album {
         this.Nombre_Album = Nombre_Album;
     }
 
+    public String getDescription() {
+        return Description;
+    }
+
+    public CircularDoublyLinkedList<Photos> getPhotos() {
+        return Photos;
+    }
+
+    public String getNombre_Album() {
+        return Nombre_Album;
+    }
+
+    public void setDescription(String Description) {
+        this.Description = Description;
+    }
+
+    public void setPhotos(CircularDoublyLinkedList<Photos> Photos) {
+        this.Photos = Photos;
+    }
+
+    public void setNombre_Album(String Nombre_Album) {
+        this.Nombre_Album = Nombre_Album;
+    }
+
     
 
 

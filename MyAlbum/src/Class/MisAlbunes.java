@@ -16,6 +16,14 @@ public class MisAlbunes {
     public MisAlbunes(ArrayList<Album> Albunes) {
         this.Albunes = Albunes;
     }
+
+    public ArrayList<Album> getAlbunes() {
+        return Albunes;
+    }
+
+    public void setAlbunes(ArrayList<Album> Albunes) {
+        this.Albunes = Albunes;
+    }
     
     
 }
