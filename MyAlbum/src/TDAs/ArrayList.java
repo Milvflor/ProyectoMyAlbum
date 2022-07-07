@@ -1,6 +1,7 @@
 package TDAs;
 
 import TDAs.Nodes.List;
+import java.util.Iterator;
 
 public class ArrayList<E> implements List<E>{
     
@@ -156,6 +157,25 @@ public class ArrayList<E> implements List<E>{
         if(index > effectiveSize-1) throw new Exception("Indice no existente");
         elements[index] = element;
         return element;
+    }
+    
+    public Iterator<E> iterator(){
+        Iterator<E> it = new Iterator(){
+            int i = 0;
+            @Override
+            public boolean hasNext() {
+                return i<elements.length;
+            }
+
+            @Override
+            public E next() {
+                E e = elements[i];
+                i++;
+                return e;
+            }
+            
+        };
+        return it;
     }
     
 }

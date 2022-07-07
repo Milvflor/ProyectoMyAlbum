@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="225.0" prefWidth="358.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="myalbum.AddAlbumController">
+   <children>
+      <Label layoutX="40.0" layoutY="50.0" text="Nombre del album:" />
+      <Label layoutX="40.0" layoutY="87.0" text="Descripción:" />
+      <TextField fx:id="name_album" layoutX="156.0" layoutY="45.0" />
+      <TextArea fx:id="decription_album" layoutX="156.0" layoutY="87.0" prefHeight="66.0" prefWidth="161.0" />
+      <Button fx:id="crear_album" layoutX="137.0" layoutY="176.0" mnemonicParsing="false" onAction="#crearAlbum_button" text="Crear album" />
+   </children>
+</AnchorPane>

@@ -5,6 +5,14 @@ import TDAs.Nodes.NodeDoubly;
 public class CircularDoublyLinkedList<E> {
     
     NodeDoubly<E> last;
+    
+//    public CircularDoublyLinkedList() {
+//        
+//        this.last = new NodeDoubly<>(null);
+//        this.last.setNext(this.last);
+//        this.last.setPrevious(this.last);
+//        
+//    }
 
     public CircularDoublyLinkedList(E content) {
         
